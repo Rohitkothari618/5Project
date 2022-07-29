@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.review {
+    margin-top: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.204);
+    padding: 23px;
+
+}
+
+.review img {
+    margin: 20px 0px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 5px 2px 0px 5px cyan;
+
+}
+
+#Name {
+    font-size: 21px;
+    line-height: 1.1;
+    letter-spacing: 0.123em;
+    font-weight: 500;
+}
+
+.Job {
+    margin: 5px 0px;
+    font-weight: bold;
+    color: rgb(34, 199, 228);
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.037em;
+    font-weight: 700;
+}
+
+#info {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text {
+    width: 400px;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 12px;
+    padding: 12px;
+    user-select: none;
+}
+
+.btn1 {
+    padding: 8px;
+    margin: 0px 12px;
+    font-weight: bolder;
+    font-size: 17px;
+    cursor: pointer;
+    border-style: none;
+    background-color: white;
+}
+
+btn1:hover {
+    background-color: lightgray;
+    transform: scale(1.02);
+    border: 2px solid blue;
+}
+
+.btn2 {
+    padding: 5px;
+    background-color: rgba(96, 203, 192, 0.133);
+    border-radius: 12px;
+    color: blue;
+    cursor: pointer;
+    border-color: rgba(127, 255, 212, 0.295);
+}
+
+.btn2:hover {
+    transform: scale(1.03);
+}

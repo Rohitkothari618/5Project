@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  height: 70px;
+  background-color: transparent;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.049);
+  width: 100vw;
+}
+
+.logo {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 20px;
+  margin-left: 90px;
+  display: inline;
+  text-shadow: 12px 12px 13px 3px blue;
+  border-style: none;
+  text-align: center;
+
+}
+
+.logo span {
+  color: blue;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+  font-size: 20px;
+
+
+}
+
+li {
+  list-style: none;
+  margin: 0px 22px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 180px;
+  align-items: center;
+
+
+
+
+
+}
+
+.social-icons li {
+  margin: 0px 10px;
+}
+
+.social-icons i {
+  color: rgb(31, 136, 201);
+  font-size: 22px;
+
+}
+
+.nav-toggle {
+  display: none;
+  font-size: larger;
+  padding: 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1180px) {
+  .social-icons {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .container {
+    font-size: 22px;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+
+
+  }
+
+  .logo {
+    margin-left: 24px;
+  }
+
+  .container {
+    display: none;
+
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    margin: 0px 44px;
+  }
+
+  .nav-toggle:hover {
+    transform: rotate(90deg);
+    background-color: rgba(113, 113, 193, 0.213);
+  }
+
+  .icons {
+    display: flex;
+
+    justify-content: space-between;
+    width: 100vw;
+    height: 40px;
+
+    margin-top: 12px;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    margin-left: 0;
+    transition: all 0.3s linear;
+
+    height: 200px;
+    align-items: center;
+    width: 100vw;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Cormorant SC', serif;
+
+  }
+
+  .toggle li {
+    width: 100vw;
+    padding-top: 22px;
+    padding-left: 60px;
+
+  }
+
+  .toggle li:hover {
+    background-color: rgba(127, 255, 212, 0.214);
+
+  }
+
+  .toggle li a:hover {
+    transform: scale(1.1);
+  }
+}
